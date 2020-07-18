@@ -11,9 +11,19 @@
 <body>
 
 <header> 
-      <div class="logo"> Victor Chan <div></header>
+      <div class= "logo"> Victor Chan </div>
+      <nav>
+        <ul id="menu">
+          <li><a href="#home"> Home</a></li>        
+          <li><a href="#about"> About</a></li>
+          <li><a href="#portfolio"> Portfolio</a></li>
+          <li><a href="#contact"> Contact</a></li>
+        </ul>
+      </nav>
+</header>
 
 <main>
+
 <article id= "Intro">
         <div class= "group"> 
           <div class= "item">
@@ -27,7 +37,6 @@
           </div>
         </div>
 </article>
-
 <article id= "about">
         <div class= "group bg-callout"> 
           <div class="item">
@@ -39,8 +48,8 @@
         </div>
 </article>
 
-<div class="wrapper">
-<article id="Portfolio">
+<div >
+<section id="portfolio">
   <h1> Portfolio </h1>
     <div class= "group"> 
       <div class="item">
@@ -66,14 +75,27 @@
        <p>This is a description of the Team Project  App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
       </div>
     </div>
-</article>
+</section>
 </div>
 
 <article id="contact">
 <div class="group">
   <div class="item">
     <h2>Contact</h2>
+<form>
+    <label for="user-name"> Name: </label>
+    <input id="user-name" type="text" name ="name">
+
+    <label for="email"> Email: </label>
+    <input id="email" type="text" name ="email">
+        
+    <label for="form-message">Your message:</label>
+    <textarea id="form-message" name="message"
+    autofocus="on" required ></textarea>
+    <button type="submit">Submit</button>
+</form>
   </div>  
+
   <div class="item item-double">
     <p> <a href="https://www.linkedin.com/in/victorcnk/"> Linkedin </a> </p>
     <p> <a href="https://github.com/victorP0"> GitHub </a> </p>
@@ -81,6 +103,7 @@
   </div>
 </div>
 </article>
+
 
 <footer>
       <p>&copy; Victor Chan</p>
