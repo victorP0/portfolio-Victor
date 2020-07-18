@@ -1,0 +1,200 @@
+/* -------  General Styles ------- */
+body{
+  margin: 0; 
+  font-family:'Courier New', Courier, monospace;
+}
+header{
+  background:grey;
+  margin-bottom: 40px;
+}
+.logo {
+  text-align: center;
+  font-size: 45px;
+  color:whitesmoke;
+  padding: 20px 0 0 0;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: 800;
+  margin: 0;
+}
+
+/* ---  Navigation --- */
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  font-family:Montserrat, 'Courier New', Courier, monospace;
+  font-size: 16px;
+  color:white;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+header nav ul li a:hover {
+  color: #bdbdbd;
+}
+
+@media all and (min-width: 700px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin: 14px 0 14px 20px;
+    padding-top: 0;
+    font-size: 42px;
+  }
+  
+  header nav {
+    margin-top: 14px;
+  }
+}
+
+/* ---  Primary Groups --- */
+
+main {
+  padding: 20px 0;
+}
+section {
+  margin-bottom: 100px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin: 80px 0;
+}
+
+article{
+margin-bottom:50px;
+}
+
+/* ---  Typography --- */
+
+h1 {
+  font-size: 28px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  color: #403933;
+}
+
+h2 {
+  font-size: 26px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 400;
+  margin: 0 0px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 18px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+}
+
+p {
+  font-family: 'Courier New', Courier, monospace;
+ line-height: 1.5em;
+ margin-bottom: 0;
+}
+
+a {
+	font-weight: 700;
+}
+a:link { color:blue; }
+a:visited { color:red; }
+a:hover { color:lightblue; }
+a:active { color:purple; }
+a:hover {
+	text-decoration: underline;	
+}
+
+
+footer p{
+  margin: 50 0 0 0px;
+  padding: 10px;
+  background:grey;
+  color: #fff;	
+	text-align: justify;
+}
+
+.bg-callout{
+  background: lightgray;
+}
+
+.group{
+  display: flex;
+  flex-direction: column;
+}
+.item{
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double{
+  flex: 2;
+  margin: 10px;
+
+}
+main img{
+  width: 100%;
+}
+img.rounded {
+  border-radius: 8px;
+}
+/* ---  (Desktop) Groups & Items --- */
+
+@media all and (min-width: 800px) {
+  .group {
+    flex-direction: row;
+  }
+    .wrapper {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+/* ---  (Desktop) Groups & Items --- */
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
+}
+
+/* Contact Form Design */
+
+form {
+  padding: 8;
+  padding-right: 10px;
+  /* Fixed small sizing issue on the right */
+}
+
+
+
+form label {
+  display: block;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
