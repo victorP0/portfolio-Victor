@@ -79,6 +79,10 @@ article{
 margin-bottom:50px;
 }
 
+#about p, h1, li{
+  margin: 0 50px;
+}
+
 /* ---  Typography --- */
 
 h1 {
@@ -86,6 +90,8 @@ h1 {
   font-family: 'Courier New', Courier, monospace;
   font-weight: 700;
   color: #403933;
+  margin-bottom: 20px;
+
 }
 
 h2 {
@@ -119,7 +125,6 @@ a:hover {
 	text-decoration: underline;	
 }
 
-
 footer p{
   margin: 50 0 0 0px;
   padding: 10px;
@@ -152,6 +157,22 @@ main img{
 img.rounded {
   border-radius: 8px;
 }
+
+.project-links{
+  text-align: center;
+  padding-top: .5em;
+}
+
+.skill-list{
+  list-style: none;
+  display: inline-flex;
+  text-align: center;
+}
+
+#portfolio ul, li{
+padding-right:1em;
+}
+
 /* ---  (Desktop) Groups & Items --- */
 
 @media all and (min-width: 800px) {
@@ -162,17 +183,13 @@ img.rounded {
     width: 80%;
     margin: auto;
   }
-}
-
-/* ---  (Desktop) Groups & Items --- */
-
-@media all and (min-width: 800px) {
   section {
     padding: 0 10%;
   }
   .group {
     flex-direction: row;
   }
+
 }
 
 /* Contact Form Design */
@@ -182,8 +199,6 @@ form {
   padding-right: 10px;
   /* Fixed small sizing issue on the right */
 }
-
-
 
 form label {
   display: block;
@@ -198,3 +213,4 @@ form textarea {
 form textarea {
   height: 160px;
 }
+
