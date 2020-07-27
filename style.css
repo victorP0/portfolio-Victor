@@ -2,10 +2,12 @@
 body{
   margin: 0; 
   font-family:'Courier New', Courier, monospace;
+  width: 100vw;
 }
 header{
   background:grey;
   margin-bottom: 40px;
+  flex-direction: column;
 }
 .logo {
   text-align: center;
@@ -21,7 +23,6 @@ header{
 
 header nav {
   display: flex;
-  flex-direction: row;
   justify-content: center;
 }
 
@@ -29,10 +30,9 @@ header nav ul {
   display: flex;
   flex-direction: row;
   padding-bottom: 0;
-}
-
-header nav ul li {
   list-style-type: none;
+  flex-wrap: wrap;
+  text-align: center;
 }
 
 header nav ul li a {
@@ -61,6 +61,11 @@ header nav ul li a:hover {
   header nav {
     margin-top: 14px;
   }
+
+  header nav ul {
+    flex-direction: row;
+  }
+
 }
 
 /* ---  Primary Groups --- */
@@ -125,6 +130,8 @@ a:hover {
 	text-decoration: underline;	
 }
 
+/* ---  End of Typography --- */
+
 footer p{
   margin: 50 0 0 0px;
   padding: 10px;
@@ -140,6 +147,7 @@ footer p{
 .group{
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 .item{
   flex: 1;
@@ -152,7 +160,8 @@ footer p{
 
 }
 main img{
-  width: 100%;
+  max-width: 100vw;
+  width: auto;
 }
 img.rounded {
   border-radius: 8px;
@@ -165,12 +174,19 @@ img.rounded {
 
 .skill-list{
   list-style: none;
-  display: inline-flex;
-  text-align: center;
+  display: flex;
+  justify-content:center;
+  flex-wrap: wrap;
+}
+#portfolio ul {
+padding:0;
+margin-bottom: 0;
+text-align:center;
 }
 
 #portfolio ul, li{
 padding-right:1em;
+
 }
 
 /* ---  (Desktop) Groups & Items --- */
@@ -185,9 +201,6 @@ padding-right:1em;
   }
   section {
     padding: 0 10%;
-  }
-  .group {
-    flex-direction: row;
   }
 
 }
@@ -214,3 +227,6 @@ form textarea {
   height: 160px;
 }
 
+#google-maps-must-behave {
+  max-width: 90vw;
+}
