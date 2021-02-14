@@ -157,8 +157,18 @@ main img {
   width: 100%;
 }
 
-.profile-pic {
-  width: 50%;
+.profile-pic img {
+  width: 100%;
+}
+
+div .profile-pic {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 5%;
+  flex: 0.6;
+  /* align-self:flex-end;
+  justify-self: right;
+  justify-items: right; */
 }
 
 img.image-enhanced {
@@ -212,6 +222,12 @@ img.image-enhanced {
   }
   .logo {
     font-size: 40px;
+  }
+}
+
+@media all and (min-width: 2000px) {
+  section {
+    padding: 0 20%;
   }
 }
 
