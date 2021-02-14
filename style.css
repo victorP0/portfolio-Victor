@@ -218,10 +218,13 @@ img.image-enhanced {
 
 @media all and (max-width: 375px) {
   iframe {
-    width: fit-content;
+    width: 100%;
   }
   .logo {
     font-size: 40px;
+  }
+  .skill-list{
+    padding: 0;
   }
 }
 
@@ -231,28 +234,6 @@ img.image-enhanced {
   }
 }
 
-/* Contact Form Design */
+/* Contact Section */
 
-form {
-  padding-right: 8px;
-  /* Fixed small sizing issue on the right */
-  font-family: "Courier New", Courier, monospace;
-}
 
-button {
-  font-size: 12px;
-}
-
-form label {
-  display: block;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  margin-bottom: 20px;
-}
-
-form textarea {
-  height: 160px;
-}
